@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="quiz.js"></script>
+	<title>Quiz</title>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="./selectivitat"><img src="logo.png" alt="logo" style="width:100px"></a>
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        LINKS
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="http://www.iespompeufabra.cat/">Web del Pompeu</a>
+        <a class="dropdown-item" href="https://educaciodigital.cat/ies-pompeu-fabra-martorell/moodle/">Moodle del Pompeu</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Selectivitat</a>
+    <div class="dropdown-menu">
+              <a class="dropdown-item" href="./selectivitat/juny2008serie2/index.html">2008 juny sèrie 2</a>
+        <a class="dropdown-item" href="./selectivitat/juny2008serie5/index.html">2008 juny sèrie 5</a>
+        <a class="dropdown-item" href="./selectivitat/setembre2008serie4/index.html">2008 setembre sèrie 4</a>
+
+      </div>
+      
+    
+    <li class="nav-item">
+    <a class="nav-link" href="http://blocs.xtec.cat/tecno/">Web de Tecnologia</a>
+    </li>
+    </ul>
+
+</nav>
+<br>
+
+<h1 class="pl-3">QÜESTIONARI PID-5-BF</h1>
+<p class="pl-3">Respon les següents preguntes amb tota sinceritat</p>
+<div>
+<div class="border m-2">
+  <p class="p-2">  </p> 
+  <div class="border m-4">
+  <p><b></b>1. La gent em descriuria com imprudent</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q1" id="q1a1" value="di0"> Totalment fals o sovint fals <br>
+    <input type="radio" name="q1" id="q1a2" value="di1"> A vegades o en cert manera fals <br>
+    <input type="radio" name="q1" id="q1a3" value="di2"> A vegades o en certa manera veritable <br>    
+    <input type="radio" name="q1" id="q1a4" value="di3"> Molt cert o sovint cert<br>
+    <p class="font-weight-bold" id="msg1"></p>
+    </fieldset>
+</div>
+
+
+<div class="border m-4">
+  <p><b>2. Crec que actuo totalment per impuls</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q2" id="q2a1" value="di0"> Totalment fals o sovint fals <br>
+    <input type="radio" name="q2" id="q2a2" value="di1"> A vegades o en cert manera fals <br>
+    <input type="radio" name="q2" id="q2a3" value="di2"> A vegades o en certa manera veritable <br>
+    <input type="radio" name="q2" id="q2a4" value="di3"> Molt cert o sovint cert <br>
+    <p class="font-weight-bold" id="msg2"></p>
+  </fieldset>
+</div>
+
+
+<div class="border m-4">
+  <p><b>3. Encara que no estigui bé no puc deixar de prendre desicions impulsives</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q3" value="di0"> Totalment fals o sovint fals <br>
+    <input type="radio" name="q3" value="di1"> A vegades o en cert manera fals <br>
+    <input type="radio" name="q3" value="di2"> A vegades o en certa manera veritable <br>
+    <input type="radio" name="q3" value="di3"> Molt cert o sovint cert <br>
+    <p class="font-weight-bold" id="msg3"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>4. Sovint penso que res del que faig importa en realitat</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q4" value="df0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q4" value="df1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q4" value="df2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q4" value="df3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>5. Altres persones em consideren irresponsable</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q5" value="di0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q5" value="di1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q5" value="di2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q5" value="di3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+
+<div class="border m-4">
+  <p><b>6. No se'm dona bé planificar amb antelació</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q6" value="di0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q6" value="di1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q6" value="di2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q6" value="di3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg5"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>7. Les meves idees solen mancar de sentit per als altres</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q7" value="ps0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q7" value="ps1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q7" value="ps2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q7" value="ps3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>8. Em preocupo per gairebé tot</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q8" value="an0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q8" value="an1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q8" value="an2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q8" value="an3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>9. M'emociono fàcilment, sovint per motius amb poca importància</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q9" value="an0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q9" value="an1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q9" value="an2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q9" value="an3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>10. Temo estar sol a la vida més que qualsevol altra cosa</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q10" value="an0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q10" value="an1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q10" value="an2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q10" value="an3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>11. M'empenyo a fer les coses d'una sola forma, encara que
+    estigui clar que així no funciona</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q11" value="an0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q11" value="an1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q11" value="an2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q11" value="an3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>12. He vist coses que en realitat no hi eren</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q12" value="ps0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q12" value="ps1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q12" value="ps2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q12" value="ps3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>13. Em mantinc allunyat de les relacions romàntiques</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q13" value="df0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q13" value="df1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q13" value="df2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q13" value="df3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>14. No m'interessa fer amics</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q14" value="df0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q14" value="df1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q14" value="df2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q14" value="df3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>15. M'irriten fàcilment tota mena de coses</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q15" value="an0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q15" value="an1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q15" value="an2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q15" value="an3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>16. No m'agrada intimar gaire amb les persones</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q16" value="df0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q16" value="df1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q16" value="df2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q16" value="df3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>17. M'importa poc ferir els sentiments dels altres</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q17" value="at0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q17" value="at1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q17" value="at2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q17" value="at3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>18. Poques vegades m'entusiasmo amb alguna cosa</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q18" value="df0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q18" value="df1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q18" value="df2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q18" value="df3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>19. Desitjo que em parin atenció</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q19" value="at0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q19" value="at1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q19" value="at2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q19" value="at3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>20. Sovint he de tractar amb persones menys importants que jo</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q20" value="at0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q20" value="at1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q20" value="at2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q20" value="at3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>21. Sovint penso coses que tenen sentit per a mi però que altres
+    persones diuen que són rares</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q21" value="ps0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q21" value="ps1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q21" value="ps2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q21" value="ps3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>22. Utilitzo les persones per aconseguir el que vull</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q22" value="at0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q22" value="at1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q22" value="at2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q22" value="at3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>23. Sovint estic distret i després, quan torno en mi, veig que
+    ha passat molt de temps</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q23" value="ps0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q23" value="ps1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q23" value="ps2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q23" value="ps3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>24. Les coses que m'envolten em solen semblar irreals o més reals
+    del normal</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q24" value="ps0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q24" value="ps1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q24" value="ps2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q24" value="ps3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+  <p><b>25. Em resulta fàcil aprofitar-me dels altres</p></b>
+  <fieldset class="m-2">
+    <input type="radio" name="q25" value="at0"> Totalment fals o sovint fals   <br>
+    <input type="radio" name="q25" value="at1"> A vegades o en cert manera fals  <br>
+    <input type="radio" name="q25" value="at2"> A vegades o en certa manera veritable   <br>
+    <input type="radio" name="q25" value="at3"> Molt cert o sovint cert  <br>
+    <p class="font-weight-bold" id="msg4"></p>
+  </fieldset>
+</div>
+
+<div class="border m-4">
+<fieldset class="m-3">
+<input type="button" class="btn btn-outline-secondary" value="Check!" onclick="check()">
+</fieldset>
+<p class="pl-3" id="txt"></p>
+</div>
+</div>
+</html>
